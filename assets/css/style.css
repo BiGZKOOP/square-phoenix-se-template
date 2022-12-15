@@ -38526,3 +38526,66 @@ footer.bg-dark.angled.lower-start:after,
 footer.bg-dark.angled.upper-start:before {
   border-left-color: #21262c !important;
 }
+
+/* CUSTOM STYLING */
+.infinite-scalable {
+  animation: animateInfiniteScalable 5s infinite alternate linear;
+}
+
+.infinite-float-from-left {
+  animation: animateFloatFromLeft 7s infinite alternate linear;
+}
+
+.infinite-float-from-right {
+  animation: animateFloatFromRight 7s infinite alternate linear;
+}
+
+.scalable {
+  transition: 0.1s;
+}
+
+.scalable:hover {
+  transition: 0.2s;
+  transform: scale(1.1, 1.1);
+}
+
+.hover-card {
+  transition: 0.2s;
+}
+
+.hover-card:hover {
+  transition: 0.2s;
+  background-color: #605dba;
+  color: white;
+}
+
+/*CUSTOM ANIMATIONS*/
+@keyframes animateInfiniteScalable {
+  from {
+    transform: scale(1,1);
+  }
+
+  to {
+    transform: scale(1.05, 1.05);
+  }
+}
+
+@keyframes animateFloatFromLeft {
+  from {
+    transform: translateX(-20px);
+  }
+
+  to {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes animateFloatFromRight {
+  from {
+    transform: translateX(20px);
+  }
+
+  to {
+    transform: translateX(-20px);
+  }
+}
